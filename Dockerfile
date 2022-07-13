@@ -5,5 +5,5 @@ RUN ln -snf /usr/share/zoneinfo/${TZ} /etc/localtime
 RUN echo "${TZ}" > /etc/timezone
 VOLUME /tmp
 EXPOSE 8761
-ADD ./target/citse-ms-tipo-0.1.jar tipo.jar
+ADD ./target/tipo-service-0.1.jar tipo.jar
 ENTRYPOINT ["java", "-jar", "/tipo.jar"]
